@@ -34,7 +34,7 @@ resource "aws_launch_template" "template" {
   name_prefix   = "template"
   image_id      = "ami-0885b1f6bd170450c"
   instance_type = "t2.micro"
-  key_name      = "renan"
+  key_name      = var.key_name
 
   monitoring {
     enabled = true
